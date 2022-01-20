@@ -1,5 +1,4 @@
 import React from "react";
-import { useContext } from "react";
 import { RoomContext } from "../context";
 import Title from "./Title";
 // get all unique values
@@ -8,8 +7,7 @@ const getUnique = (items, value) => {
 };
 
 const RoomsFilter = ({ rooms }) => {
-  // react hooks
-  const context = useContext(RoomContext);
+  
   const {
     handleChange,
     type,
